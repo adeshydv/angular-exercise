@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonService } from '../serives/common.service';
 import {  EventList } from '../serives/event-list';
 import { Router } from '@angular/router';
+import { GlobaldataService } from '../serives/globaldata.service';
 
 @Component({
   selector: 'app-event-list',
@@ -91,14 +92,19 @@ export class EventListComponent implements OnInit {
     }
   ];
   error: any;
-  constructor(private configService: CommonService, private router: Router) { }
+  public searchText:String;
+
+  constructor(private configService: CommonService, 
+    private globaldataObj: GlobaldataService,
+    private router: Router) { }
 
   ngOnInit() {
     //this.fetchEvents();
   }
 
-  public bookNow(){
+  public bookNow(eventName:String){
     this.router.navigate(['/bookEvent'], { skipLocationChange: true });
+    this.globaldataObj.eventName = eventName;
   }
 
   private fetchEvents() {

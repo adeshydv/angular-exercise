@@ -8,6 +8,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BookEventComponent } from './book-event/book-event.component';
+import { GrdFilterPipe } from './serives/grd-filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,12 +18,14 @@ import { BookEventComponent } from './book-event/book-event.component';
     MainPageComponent,
     HeaderComponent,
     FooterComponent,
-    BookEventComponent
+    BookEventComponent,
+    GrdFilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

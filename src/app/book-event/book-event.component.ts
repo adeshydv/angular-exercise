@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobaldataService } from '../serives/globaldata.service';
 
 @Component({
   selector: 'app-book-event',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book-event.component.css']
 })
 export class BookEventComponent implements OnInit {
-
-  constructor() { }
+  public eventName: String;
+  constructor(private globaldataObj: GlobaldataService,) { }
 
   ngOnInit() {
+    this.eventName = this.globaldataObj.eventName
   }
 
 }

@@ -1,44 +1,17 @@
 <div class="row">
-    {{eventList}}
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-        <h3 class="text-center">Event Name</h3>
-        <img src="https://in.bmscdn.com/Events/moviecard/sunburn-goa-2019-et00104928-2019-6-29-t-12-26-32.jpg"
+    <div style="margin-bottom: 70px;" *ngFor="let event of eventList1; let i = index"
+        class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div style="height: 60px;">
+            <h3 class="text-center">{{event.name}}</h3>
+        </div>
+        <img src="{{event.imgLink}}"
             alt="Smiley face" height="300" width="100%">
         <div class="text-center">
-            <h4>Event Date: 20/29/1928</h4>
-            <p>No. of Seate available: 100</p>
-            <button type="button" class="btn btn-primary">Book Now</button>
-        </div>
-    </div>
-    <div class="col-md-3 col-lg-3">
-        <h3>Event Name</h3>
-        <img src="https://in.bmscdn.com/Events/moviecard/sunburn-goa-2019-et00104928-2019-6-29-t-12-26-32.jpg"
-            alt="Smiley face" height="300" width="100%">
-        <div style="text-align: center">
-            <h4>Event Date: 20/29/1928</h4>
-            <p>No. of Seate available: 100</p>
-            <button type="button" class="btn btn-primary">Book Now</button>
-        </div>
-    </div>
-    <div class="col-md-3 col-lg-3">
-        <h3>Event Name</h3>
-        <img src="https://in.bmscdn.com/Events/moviecard/sunburn-goa-2019-et00104928-2019-6-29-t-12-26-32.jpg"
-            alt="Smiley face" height="300" width="100%">
-        <div style="text-align: center">
-            <h4>Event Date: 20/29/1928</h4>
-            <p>No. of Seate available: 100</p>
-            <button type="button" class="btn btn-primary">Book Now</button>
-        </div>
-    </div>
-    <div class="col-md-3 col-lg-3">
-        <h3>Event Name</h3>
-        <img src="https://in.bmscdn.com/Events/moviecard/sunburn-goa-2019-et00104928-2019-6-29-t-12-26-32.jpg"
-            alt="Smiley face" height="300" width="100%">
-        <div style="text-align: center">
-            <h4>Event Date: 20/29/1928</h4>
-            <p>No. of Seate available: 100</p>
-            <button type="button" class="btn btn-primary">Book Now</button>
+            <h4>Event Date: {{event.eventDate}}</h4>
+            <p>No. of Seate available: {{event.noOfSeats}}</p>
+            <button (click)="bookNow()" *ngIf="event.noOfSeats > 0" type="button" class="btn btn-primary">Book
+                Now</button>
+            <h4 *ngIf="event.noOfSeats <= 0"> Sold out</h4>
         </div>
     </div>
 </div>
-

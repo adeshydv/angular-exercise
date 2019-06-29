@@ -1,20 +1,19 @@
 <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" routerLink="/eventList" routerLinkActive="active">Angular Exercise</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="active">
-            <a routerLink="/" routerLinkActive="active">Home</a>
-        </li>
-        <li>
-            <a (click)="navigateUrl('Event List')">Event List</a>
-        </li>
-        <li>
-            <a (click)="navigateUrl('bookEvent')">Book Event</a>
-        </li>
-      </ul>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="/eventList" routerLinkActive="active">Angular Exercise</a>
     </div>
-  </nav>
-    
-  
+    <ul class="nav navbar-nav">
+      <li [ngClass]="{
+          'active':clickedTab === 'Event List'
+        }">
+        <a (click)="navigateUrl('Event List')">Event List</a>
+      </li>
+      <li [ngClass]="{
+          'active':clickedTab === 'bookEvent'
+        }">
+        <a (click)="navigateUrl('bookEvent')">Book Event</a>
+      </li>
+    </ul>
+  </div>
+</nav>

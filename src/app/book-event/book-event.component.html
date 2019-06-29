@@ -1,40 +1,52 @@
 <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div style="margin-bottom: 50px;" class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-4 col-lg-offset-4">
         <h3>{{eventName}}</h3>
+        <p>No. of available seats: {{seats}} </p>
     </div>
-    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
         <form>
-            <div class="form-group">
+            <div class="form-group margin-bottom">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name"
-                    required>
+                <input type="text" class="form-control" required id="name" aria-describedby="emailHelp"
+                    placeholder="Enter name">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
             </div>
-            <div class="form-group">
+            <div class="form-group margin-bottom">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                <input type="email" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
             </div>
-            <div class="form-group">
+            <div class="form-group margin-bottom">
                 <label for="phonenumber">Phone Number</label>
-                <input type="text" class="form-control" id="phonenumber" aria-describedby="emailHelp"
+                <input type="text" class="form-control" required id="phonenumber" aria-describedby="emailHelp"
                     placeholder="Enter Phone Number">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
             </div>
-            <div class="form-group">
+            <div class="form-group margin-bottom">
                 <label for="sel1">No. of Seats</label>
-                <select class="form-control" id="sel1">
+                <select class="form-control" required id="sel1">
+                    <option value="">--Select seats--</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="row" style="margin-top: 60px;">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <button type="submit" class="btn btn-default">Cancel</button>
+                </div>
+                <div
+                    class="col-xs-2 col-xs-offset-3 col-sm-2 col-sm-offset-3 col-md-2 col-md-offset-3 col-lg-2 col-lg-offset-3">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
         </form>
     </div>
 </div>

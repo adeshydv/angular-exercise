@@ -8,10 +8,12 @@ import { GlobaldataService } from '../serives/globaldata.service';
 })
 export class BookEventComponent implements OnInit {
   public eventName: String;
+  public seats: Number;
   constructor(private globaldataObj: GlobaldataService,) { }
 
   ngOnInit() {
-    this.eventName = this.globaldataObj.eventName
+    this.eventName = this.globaldataObj.eventName;
+    this.seats = this.globaldataObj.seats;
   }
 
 }

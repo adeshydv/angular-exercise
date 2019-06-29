@@ -102,9 +102,10 @@ export class EventListComponent implements OnInit {
     //this.fetchEvents();
   }
 
-  public bookNow(eventName:String){
+  public bookNow(eventName:String, seats:Number){
     this.router.navigate(['/bookEvent'], { skipLocationChange: true });
     this.globaldataObj.eventName = eventName;
+    this.globaldataObj.seats = seats;
   }
 
   private fetchEvents() {

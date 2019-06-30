@@ -11,10 +11,15 @@ import { ToastrService } from 'ngx-toastr';
 export class BookEventComponent implements OnInit {
   public eventName: any;
   public seats: Number;
-  public name: String;
-  public email: String;
+  public name: String='';
+  public name2: String='';
+  public name3: String='';
+  public name4: String='';
+  public name5: String='';
+  public name6: String='';
+  public email: String='';
   public noofseats: String = '';
-  public phonenumber: String;
+  public phonenumber: String='';
 
   constructor(private globaldataObj: GlobaldataService,
     private toastr: ToastrService,

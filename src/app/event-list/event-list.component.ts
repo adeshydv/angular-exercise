@@ -23,28 +23,28 @@ export class EventListComponent implements OnInit {
     {
       "name": "Coachella Valley Music and Arts Festival",
       "eventDate": "2019-06-26",
-      "noOfSeats": 56,
+      "noOfSeats": 2,
       "imgLink": "https://s3.amazonaws.com/extras.dayzeroproject.com/8255_100.jpg",
       
     },
     {
       "name": "Glastonbury Festival",
       "eventDate": "2019-06-26",
-      "noOfSeats": 0,
+      "noOfSeats": 1,
       "imgLink": "https://s3.amazonaws.com/extras.dayzeroproject.com/8252_100.jpg",
       
     },
     {
       "name": "Burning Man",
       "eventDate": "2019-06-26",
-      "noOfSeats": 56,
+      "noOfSeats": 5,
       "imgLink": "https://s3.amazonaws.com/extras.dayzeroproject.com/8284_100.jpg",
       
     },
     {
       "name": "Rio Carnival‎",
       "eventDate": "2019-06-26",
-      "noOfSeats": 56,
+      "noOfSeats": 6,
       "imgLink": "https://s3.amazonaws.com/extras.dayzeroproject.com/8256_100.jpg",
       
     },

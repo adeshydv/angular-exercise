@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GlobaldataService } from '../serives/globaldata.service';
+import { GlobaldataService } from '../services/globaldata.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 

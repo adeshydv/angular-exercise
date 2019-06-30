@@ -7,7 +7,7 @@ import { EventListComponent } from './event-list/event-list.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { HeaderComponent } from './header/header.component';
 import { BookEventComponent } from './book-event/book-event.component';
-import { GrdFilterPipe } from './serives/grd-filter.pipe';
+import { GrdFilterPipe } from './services/grd-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {PopoverModule} from "ngx-smart-popover";

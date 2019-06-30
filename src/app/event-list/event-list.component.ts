@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonService } from '../serives/common.service';
-import {  EventList } from '../serives/event-list';
+import { CommonService } from '../services/common.service';
+import {  EventList } from '../services/event-list';
 import { Router } from '@angular/router';
-import { GlobaldataService } from '../serives/globaldata.service';
+import { GlobaldataService } from '../services/globaldata.service';
 
 @Component({
   selector: 'app-event-list',

@@ -11,6 +11,7 @@ import { BookEventComponent } from './book-event/book-event.component';
 import { GrdFilterPipe } from './serives/grd-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {PopoverModule} from "ngx-smart-popover";
  
 import { ToastrModule } from 'ngx-toastr';
 
@@ -29,6 +30,7 @@ import { ToastrModule } from 'ngx-toastr';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    PopoverModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot({
       timeOut: 10000,

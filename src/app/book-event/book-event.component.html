@@ -8,27 +8,27 @@
             <div class="form-group margin-bottom">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" required id="name" aria-describedby="emailHelp"
-                    placeholder="Enter name">
+                    placeholder="Enter name" name="name" [(ngModel)]="name">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
             </div>
             <div class="form-group margin-bottom">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp"
+                <input type="email" name="email" [(ngModel)]="email" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
             </div>
             <div class="form-group margin-bottom">
                 <label for="phonenumber">Phone Number</label>
-                <input type="text" class="form-control" required id="phonenumber" aria-describedby="emailHelp"
+                <input type="text" class="form-control" name="phonenumber" [(ngModel)]="phonenumber" required id="phonenumber" aria-describedby="emailHelp"
                     placeholder="Enter Phone Number">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
             </div>
             <div class="form-group margin-bottom">
-                <label for="sel1">No. of Seats</label>
-                <select class="form-control" required id="sel1">
+                <label for="noofseats">No. of Seats</label>
+                <select class="form-control" name="noofseats" [(ngModel)]="noofseats" required id="noofseats">
                     <option value="">--Select seats--</option>
                     <option>1</option>
                     <option>2</option>
@@ -38,13 +38,48 @@
                     <option>6</option>
                 </select>
             </div>
+            <div *ngIf="noofseats > 1" class="form-group margin-bottom">
+                <label for="name">Name of Attendee 2</label>
+                <input type="text" class="form-control" required id="name" aria-describedby="emailHelp"
+                    placeholder="Enter name" name="name" [(ngModel)]="name">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div *ngIf="noofseats > 2" class="form-group margin-bottom">
+                <label for="name">Name of Attendee 3</label>
+                <input type="text" class="form-control" required id="name" aria-describedby="emailHelp"
+                    placeholder="Enter name" name="name" [(ngModel)]="name">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div *ngIf="noofseats > 3" class="form-group margin-bottom">
+                <label for="name">Name of Attendee 4</label>
+                <input type="text" class="form-control" required id="name" aria-describedby="emailHelp"
+                    placeholder="Enter name" name="name" [(ngModel)]="name">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div *ngIf="noofseats > 4" class="form-group margin-bottom">
+                <label for="name">Name of Attendee 5</label>
+                <input type="text" class="form-control" required id="name" aria-describedby="emailHelp"
+                    placeholder="Enter name" name="name" [(ngModel)]="name">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div *ngIf="noofseats > 5" class="form-group margin-bottom">
+                <label for="name">Name of Attendee 6</label>
+                <input type="text" class="form-control" required id="name" aria-describedby="emailHelp"
+                    placeholder="Enter name" name="name" [(ngModel)]="name">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
             <div class="row" style="margin-top: 60px;">
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <button type="submit" class="btn btn-default">Cancel</button>
+                    <button (click)="cancel()" type="submit" class="btn btn-default">Cancel</button>
                 </div>
                 <div
                     class="col-xs-2 col-xs-offset-3 col-sm-2 col-sm-offset-3 col-md-2 col-md-offset-3 col-lg-2 col-lg-offset-3">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button (click)="submit()" type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </form>

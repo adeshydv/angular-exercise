@@ -20,7 +20,7 @@ export class BookEventComponent implements OnInit {
   public email: String = '';
   public noofseats: any = '';
   public phonenumber: String = '';
-  public btnDisbled:boolean=false;
+  public btnDisbled: boolean = false;
 
   constructor(private globaldataObj: GlobaldataService,
     private toastr: ToastrService,
@@ -32,6 +32,19 @@ export class BookEventComponent implements OnInit {
   }
 
   public submit() {
+    let dataToSubmit = {
+      "name": this.name,
+      "name2": this.name2,
+      "name3": this.name3,
+      "name4": this.name4,
+      "name5": this.name5,
+      "name6": this.name6,
+      "email": this.email,
+      "noofseats": this.noofseats,
+      "phonenumber": this.phonenumber
+    };
+    console.log("--------Data submitted successfuly--------");
+    console.log(dataToSubmit);
     this.seats = this.seats - this.noofseats;
     this.btnDisbled = true;
     this.resetForm();

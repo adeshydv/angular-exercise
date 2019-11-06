@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-3{fill:#0075ff}
+        </style>
+        <clipPath id="clip-path">
+            <path d="M0 0h18v18H0z" class="cls-1"/>
+        </clipPath>
+    </defs>
+    <g id="facebook-icon" class="cls-2">
+        <g id="Group_15" data-name="Group 15" transform="translate(-307 -467.827)">
+            <path id="Path_57" d="M315.994 467.827a9 9 0 1 1-8.994 9 9 9 0 0 1 8.994-9zm-1.479 8.96v5.543h2.315v-5.549h1.554l.2-1.954h-1.741a.586.586 0 0 1-.02-.086c0-.344-.006-.688 0-1.032.005-.412.168-.568.584-.569h1.135v-1.915h-1.608a4.052 4.052 0 0 0-.505.025 2 2 0 0 0-1.826 1.606 4.326 4.326 0 0 0-.089.821c-.015.376 0 .752 0 1.155h-1.086v1.954z" class="cls-3" data-name="Path 57"/>
+        </g>
+    </g>
+</svg>

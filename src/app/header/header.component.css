@@ -1,0 +1,67 @@
+
+
+.header {
+  overflow: hidden;
+  border: solid 1px #d5dce3;
+  padding: 20px 10px;
+}
+.Component-12-1 {
+    width: 204px;
+    height: 36px;
+    object-fit: contain;
+  }
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 18px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+}
+.nav-links {
+    font-family: SFProDisplay;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000;
+  }
+  .signup{
+    width: 122px;
+    height: 46px;
+    border-radius: 5px;
+    background-color: #0075ff;
+  }
+  .login{
+    width: 122px;
+    height: 46px;
+    border-radius: 5px;
+    margin-right: 16px;
+    border: solid 1px #0075ff;
+  }
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}

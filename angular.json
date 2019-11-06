@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-exercise": {
+    "alphaseed": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-exercise",
+            "outputPath": "dist/alphaseed",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,8 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/ngx-toastr/toastr.css" 
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -59,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-exercise:build"
+            "browserTarget": "alphaseed:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-exercise:build:production"
+              "browserTarget": "alphaseed:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-exercise:build"
+            "browserTarget": "alphaseed:build"
           }
         },
         "test": {
@@ -85,9 +84,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "../node_modules/font-awesome/css/font-awesome.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           }
         },
         "lint": {
@@ -107,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-exercise:serve"
+            "devServerTarget": "alphaseed:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-exercise:serve:production"
+              "devServerTarget": "alphaseed:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-exercise"
+  "defaultProject": "alphaseed"
 }

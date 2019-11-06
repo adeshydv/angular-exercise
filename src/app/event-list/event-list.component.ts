@@ -99,7 +99,7 @@ export class EventListComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit() {
-    //this.fetchEvents();
+    this.fetchEvents();
   }
 
   public bookNow(eventName:String, seats:Number){
